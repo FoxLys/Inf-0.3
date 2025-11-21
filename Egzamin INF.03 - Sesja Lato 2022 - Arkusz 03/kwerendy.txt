@@ -6,5 +6,3 @@ kw3: SELECT karty_wedkarskie.imie, karty_wedkarskie.nazwisko, karty_wedkarskie.p
 
 
 kw4: UPDATE `karty_wedkarskie` SET `punkty` = punkty + 2 WHERE `karty_wedkarskie`.`id` = 1;
-
-kw5: experyment;
