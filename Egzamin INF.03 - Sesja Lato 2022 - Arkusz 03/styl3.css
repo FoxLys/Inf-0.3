@@ -1,3 +1,58 @@
-*{
-	
+* {
+	font-family: Verdana,
+		sans-serif;
+}
+
+body {
+	display: flex;
+}
+
+#headerLeft,
+#headerRight {
+	background-color: SeaGreen;
+	color: white;
+	line-height: 150px;
+	height: 260px;
+	font-size: 160%;
+}
+
+#headerLeft {
+	width: 75%;
+	flex: 75%;
+}
+
+#headerRight {
+	width: 25%;
+	flex: 25%;
+	text-align: right;
+}
+
+main {
+	background-color: mintcream;
+	padding: 80px;
+}
+
+#footerLeft,
+#footerRight {
+	background-color: seagreen;
+	color: white;
+	width: 50%;
+	height: 70px;
+	text-align: center;
+}
+
+#selector input {
+	margin-bottom: 20px;
+}
+
+#zdjencie {
+	box-shadow: 15px 15px 10px dimgray;
+}
+
+#document {
+	text-decoration: none;
+	background-color: mintcream;
+	color: seagreen;
+	padding: 15px;
+	line-height: 70px;
 }
