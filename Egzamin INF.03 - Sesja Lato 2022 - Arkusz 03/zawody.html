@@ -9,15 +9,31 @@
 	<body>
 		<header>
 			<div id="headerLeft">
-				<h1>Zawody polskich wędkarz</h1>  
+				<h1>Zawody polskich wędkarz</h1>
 			</div>
 			<div id="headerRight">
-				<img src="./zawody.jpg" alt="wędkowanie">
+				<img src="./zawody.jpg" alt="wędkowanie" />
 			</div>
 		</header>
 		<main>
 			<h3>Łowiska</h3>
-			<hr>
+			<ul>
+				<li>Zalew Węgrowski</li>
+				<li>Zbiornik Bukówka</li>
+				<li>Jeziorko Bartbetowskie</li>
+				<li>Warta-Obrzycko</li>
+			</ul>
+			<h3>Dodaj zawody wędkarskie</h3>
+			<form action="zgloszenie.php" method="post">
+				<label for="numer">Łowisko:</label>
+				<input type="number" name="numer" id="numer" />
+				<label for="data">Data:</label>
+				<input type="date" name="data" id="data" />
+				<label for="text">Sędzia:</label>
+				<input type="text" name="text" id="text" />
+				<button type="reset" onclick="">CZYŚĆ</button>
+				<button type="submit" onclick="">DODAJ</button>
+			</form>
 		</main>
 		<footer>
 			<div id="footerLeftsd"></div>
