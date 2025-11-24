@@ -18,19 +18,21 @@ header {
 
 #headerLeft {
 	width: 75%;
-	flex: 75%;
 }
 
 #headerRight {
 	width: 25%;
-	flex: 25%;
 	text-align: right;
 }
 
 main {
 	background-color: mintcream;
 	padding: 80px;
+}
+
+footer {
 	display: flex;
+	width: 100%;
 }
 
 #footerLeft,
@@ -48,6 +50,7 @@ main {
 
 #zdjencie {
 	box-shadow: 15px 15px 10px dimgray;
+	margin-right: 75px;
 }
 
 #document {
