@@ -3,7 +3,7 @@
 		sans-serif;
 }
 
-body {
+header {
 	display: flex;
 }
 
@@ -30,6 +30,7 @@ body {
 main {
 	background-color: mintcream;
 	padding: 80px;
+	display: flex;
 }
 
 #footerLeft,
