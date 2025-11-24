@@ -5,10 +5,13 @@ $conn = mysqli_connect(
 	wedkarstwo
 );
 
+$q = "";
+// зміні для повончення
+#sdad
+$
+
 
 
 
 $conn->close();
-
-
 ?>
