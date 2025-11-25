@@ -5,18 +5,18 @@ $conn = mysqli_connect(
 	'',
 	'wedkarstwo'
 );
-
+// Check connection
 if ($conn->connect_error) {
-	die("conn faile" . $conn->connect_error);
+	die("Connection failed: " . $conn->connect_error);
 }
-echo "good";
-// зміні для повончення
+echo "Connected successfully";
 
 $lowisko = $_POST['lowisko'];
 $date = $_POST['data'];
 $sedzia = $_POST["sedzia"];
 
-$q = "INSERT INTO `zawody_wedkarskie` (`id`, `Karty_wedkarskie_id`, `Lowisko_id`, `data_zawodow`, `sedzia`) VALUES (NULL, 0, $lowisko, $date, $sedzia);
+$q = "INSERT INTO `zawody_wedkarskie` (`id`, `Karty_wedkarskie_id`, `Lowisko_id`, `data_zawodow`, `sedzia`)
+VALUES (NULL, 0, $lowisko, '$date', $sedzia);
 ";
 mysqli_query($conn, $q);
 
