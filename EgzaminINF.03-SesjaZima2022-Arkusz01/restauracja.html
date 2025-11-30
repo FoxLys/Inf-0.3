@@ -27,14 +27,17 @@
 			</div>
 			<div id="dolna">
 				<h3>Zarezerwuj stolik on-line</h3>
-				<form action="" method="post">
+				<form action="rezerwacja.php" method="post">
 					<label for="date">Data (format rrrr-mm-dd):</label>
-					<input type="date" name="date" id="date" />
+					<br />
+					<input type="text" name="date" id="date" />
 					<br />
 					<label for="people">Ile osób?</label>
+					<br />
 					<input type="number" name="people" id="people" />
 					<br />
 					<label for="telefon">Twój numer telefonu:</label>
+					<br />
 					<input type="tel" name="telefon" id="telefon" />
 					<br />
 					<input type="checkbox" name="like" id="like" />
@@ -42,14 +45,13 @@
 						Zgadzam się na przetwarzanie moich danych osobowych
 					</label>
 					<br />
+
 					<input type="reset" value="WYCZYŚĆ" class="button" />
 					<input type="submit" value="REZERWUJ" class="button" />
 				</form>
 			</div>
 		</main>
 
-		<footer>
-			<p>Stronę internetową opracował: asdasdasdasd</p>
-		</footer>
+		<footer>Stronę internetową opracował: asdasdasdasd</footer>
 	</body>
 </html>
