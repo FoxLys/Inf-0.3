@@ -9,6 +9,7 @@
 </head>
 
 <body>
+	
 	<header>
 		<div id="headerLeft">
 			<h1>Zawody polskich wędkarz</h1>
@@ -30,8 +31,8 @@
 			<label for="numer">Łowisko:</label>
 			<input type="number" name="lowisko" />
 			<br />
-			<label for="data">Data:</label>
-			<input type="date" name="data" />
+			<label for="date">Data:</label>
+			<input type="date" name="date" />
 			<br />
 			<label for="text">Sędzia:</label>
 			<input type="text" name="sedzia" />
