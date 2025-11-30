@@ -7,24 +7,23 @@
 		<title>Restauracja Wszystkie Smaki</title>
 	</head>
 	<body>
-
-
 		<header>
-			<h3>Witamy w restauracji „Wszystkie Smaki”</h3>
+			<h1>Witamy w restauracji „Wszystkie Smaki”</h1>
 		</header>
 
-
 		<main>
-			<div id="lewy">
-				<img src="./menu.jpg" alt="Nasze danie" />
-			</div>
-			<div id="prawy">
-				<h4>U nas dobrze zjesz!</h4>
-				<ol>
-					<li>Obiady od 40 zł</li>
-					<li>Przekąski od 10 zł</li>
-					<li>Kolacje od 20 zł</li>
-				</ol>
+			<div id="top">
+				<div id="lewy">
+					<img src="./menu.jpg" alt="Nasze danie" id="obraz" />
+				</div>
+				<div id="prawy">
+					<h4>U nas dobrze zjesz!</h4>
+					<ol>
+						<li>Obiady od 40 zł</li>
+						<li>Przekąski od 10 zł</li>
+						<li>Kolacje od 20 zł</li>
+					</ol>
+				</div>
 			</div>
 			<div id="dolna">
 				<h3>Zarezerwuj stolik on-line</h3>
@@ -38,17 +37,17 @@
 					<label for="telefon">Twój numer telefonu:</label>
 					<input type="tel" name="telefon" id="telefon" />
 					<br />
+					<input type="checkbox" name="like" id="like" />
 					<label for="like">
 						Zgadzam się na przetwarzanie moich danych osobowych
 					</label>
-					<input type="checkbox" name="like" id="like" />
-					<input type="reset" value="WYCZYŚĆ" />
-					<input type="submit" value="REZERWUJ" />
+					<br />
+					<input type="reset" value="WYCZYŚĆ" class="button" />
+					<input type="submit" value="REZERWUJ" class="button" />
 				</form>
 			</div>
 		</main>
 
-		
 		<footer>
 			<p>Stronę internetową opracował: asdasdasdasd</p>
 		</footer>
