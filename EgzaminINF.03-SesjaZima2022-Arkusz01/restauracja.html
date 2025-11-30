@@ -7,14 +7,17 @@
 		<title>Restauracja Wszystkie Smaki</title>
 	</head>
 	<body>
+
+
 		<header>
 			<h3>Witamy w restauracji „Wszystkie Smaki”</h3>
 		</header>
+
+
 		<main>
 			<div id="lewy">
 				<img src="./menu.jpg" alt="Nasze danie" />
 			</div>
-
 			<div id="prawy">
 				<h4>U nas dobrze zjesz!</h4>
 				<ol>
@@ -23,7 +26,31 @@
 					<li>Kolacje od 20 zł</li>
 				</ol>
 			</div>
+			<div id="dolna">
+				<h3>Zarezerwuj stolik on-line</h3>
+				<form action="" method="post">
+					<label for="date">Data (format rrrr-mm-dd):</label>
+					<input type="date" name="date" id="date" />
+					<br />
+					<label for="people">Ile osób?</label>
+					<input type="number" name="people" id="people" />
+					<br />
+					<label for="telefon">Twój numer telefonu:</label>
+					<input type="tel" name="telefon" id="telefon" />
+					<br />
+					<label for="like">
+						Zgadzam się na przetwarzanie moich danych osobowych
+					</label>
+					<input type="checkbox" name="like" id="like" />
+					<input type="reset" value="WYCZYŚĆ" />
+					<input type="submit" value="REZERWUJ" />
+				</form>
+			</div>
 		</main>
-		<footer></footer>
+
+		
+		<footer>
+			<p>Stronę internetową opracował: asdasdasdasd</p>
+		</footer>
 	</body>
 </html>
