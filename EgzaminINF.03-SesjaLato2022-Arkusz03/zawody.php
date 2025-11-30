@@ -12,21 +12,6 @@
 	<header>
 		<div id="headerLeft">
 			<h1>Zawody polskich wędkarz</h1>
-			<?php
-			$servername = "localhost";
-			$username = "root";
-			$password = "";
-			$db = "wedkarstwo";
-
-			// Create connection
-			$conn = new mysqli($servername, $username, $password, $db);
-
-			// Check connection
-			if ($conn->connect_error) {
-				die("Connection failed: " . $conn->connect_error);
-			}
-			echo "Connected successfully";
-			?>
 		</div>
 		<div id="headerRight">
 			<img id="zdjencie" src="./zawody.jpg" alt="wędkowanie" />
