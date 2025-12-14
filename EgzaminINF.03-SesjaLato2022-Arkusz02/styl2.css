@@ -29,6 +29,27 @@ main {
 	width: 40%;
 	height: 322px;
 }
-#car{
-	
+
+#car {
+	margin: 40px;
+	padding: 10px;
+}
+
+#car:hover {
+	border: 1px dotted YellowGreen;
+}
+
+#odnosnik {
+	padding: 0 50px 0 50px;
+	color: yellowgreen;
+}
+
+table,
+tr,
+td {
+	border: solid 1px olivedrab;
+}
+
+table {
+	width: 90%;
 }
