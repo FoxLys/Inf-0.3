@@ -43,7 +43,7 @@ main {
 	border: 1px dotted YellowGreen;
 }
 
-#odnosnik {
+nav>a {
 	padding: 0 50px 0 50px;
 	color: yellowgreen;
 }

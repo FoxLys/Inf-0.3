@@ -3,15 +3,16 @@ body {
     text-align: center;
 }
 
-header,footer {
-    background: rgb(120,0,46);
+header,
+footer {
+    background: rgb(120, 0, 46);
     color: white;
     padding: 5px;
     font-size: 150%;
 }
 
 #menu {
-    background: rgb(173,20,87);
+    background: rgb(173, 20, 87);
     text-align: left;
 }
 
@@ -25,7 +26,7 @@ header,footer {
 }
 
 #prawy {
-    background: rgb(173,20,87);
+    background: rgb(173, 20, 87);
     width: 40%;
     height: 322px;
     float: left;
@@ -49,7 +50,8 @@ a {
     color: yellowgreen;
 }
 
-table, td {
+table,
+td {
     border: 1px solid olivedrab;
 }
 
