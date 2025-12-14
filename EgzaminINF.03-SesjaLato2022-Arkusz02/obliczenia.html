@@ -29,13 +29,14 @@
 						>Rodzaj paliwa (1-benzyna, 2-olej napędowy):
 					</label>
 					<br />
-					<input type="number" id="paliwo" value="2" />
+					<input type="number" id="paliwo" value="2" min="1" max="2" />
 					<br />
 					<label for="litre">Ile litrów?</label>
 					<br />
 					<input type="number" id="litre" value="2" />
 					<br />
-					<button onclick="Liczenie()">OBLICZ</button>
+					<button type="button" onclick="Liczenie()">OBLICZ</button>
+					<p id="odpowiedz"></p>
 				</form>
 			</div>
 			<div id="right">
@@ -49,7 +50,26 @@
 		<script>
 			console.log('TEST1')
 			function Liczenie() {
-				
+				const a = document.getElementById('paliwo').value
+				const b = document.getElementById('litre').value
+
+				const paliwo1 = 4
+				const paliwo2 = 3.5
+
+				if (a == 1) {
+					const wynik = paliwo1 * b
+					document.getElementById(
+						'odpowiedz'
+					).innerHTML = `koszt paliwa: ${wynik} zł`
+				}
+				if (a == 2) {
+					const wynik = paliwo2 * b
+					document.getElementById(
+						'odpowiedz'
+					).innerHTML = `koszt paliwa: ${wynik} zł`
+				} else {
+					document.getElementById('odpowiedz').innerHTML = 'koszt paliwa: 0 zł'
+				}
 			}
 		</script>
 	</body>
