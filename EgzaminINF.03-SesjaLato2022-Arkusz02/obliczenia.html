@@ -12,13 +12,13 @@
 		</header>
 
 		<nav>
-			<a href="">
+			<a href="./stacja.html">
 				<img src="Pliki/home.png" />
 			</a>
 			<a href="./obliczenia.html">
 				<img src="Pliki/znak.png" />
 			</a>
-			<a id="odnosnik" href=". /kwerendy.txt">Pobierz dokumenty</a>
+			<a id="odnosnik" href="./kwerendy.txt">Pobierz dokumenty</a>
 		</nav>
 
 		<main>
@@ -29,13 +29,13 @@
 						>Rodzaj paliwa (1-benzyna, 2-olej napędowy):
 					</label>
 					<br />
-					<input type="number" name="paliwo" />
+					<input type="number" id="paliwo" value="2" />
 					<br />
 					<label for="litre">Ile litrów?</label>
 					<br />
-					<input type="number" name="litre" />
+					<input type="number" id="litre" value="2" />
 					<br />
-					<input type="submit" value="OBLICZ" />
+					<button onclick="Liczenie()">OBLICZ</button>
 				</form>
 			</div>
 			<div id="right">
@@ -46,5 +46,11 @@
 		<footer>
 			<p>Stronę opracował: 54153481843</p>
 		</footer>
+		<script>
+			console.log('TEST1')
+			function Liczenie() {
+				
+			}
+		</script>
 	</body>
 </html>
