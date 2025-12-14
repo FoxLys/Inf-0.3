@@ -1,0 +1,34 @@
+* {
+	font-family: Cambria;
+	text-align: center;
+}
+
+header,
+footer {
+	background-color: rgb(173, 20, 87);
+	color: white;
+	padding: 5px;
+	font-size: 150%;
+}
+
+main {
+	color: rgb(173, 20, 87);
+	text-align: left;
+}
+
+#left {
+	background-color: snow;
+	color: olivedrab;
+	width: 60%;
+	height: 322px;
+	text-align: left;
+}
+
+#right {
+	background-color: rgb(173, 20, 87);
+	width: 40%;
+	height: 322px;
+}
+#car{
+	
+}
