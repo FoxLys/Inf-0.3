@@ -28,7 +28,6 @@ footer {
 	padding: 50px;
 }
 
-li {
-	list-style-type: decimal;
-	background-color: red;
+ol {
+	list-style-type: upper-roman;
 }

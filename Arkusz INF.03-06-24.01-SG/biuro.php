@@ -62,7 +62,7 @@
 	</footer>
 
 	<script>
-		setInterval(() => location.reload(), 3000);
+		setInterval(() => location.reload(), 300000);
 	</script>
 </body>
 
