@@ -3,6 +3,7 @@
 	text-align: center;
 }
 
+
 header,
 footer {
 	background-color: #BA6B6C;
@@ -15,17 +16,20 @@ footer {
 	background-color: #EF9A9A;
 	width: 20%;
 	height: 500px;
+	float: left;
 }
 
 #middle {
 	background-color: MistyRose;
 	width: 60%;
 	height: 500px;
+	float: left;
 }
 
 #dane {
 	background-color: MistyRose;
 	padding: 50px;
+	clear: both;
 }
 
 ol {
@@ -46,7 +50,8 @@ table {
 	width: 80%;
 	border: solid 1px Maroon;
 }
-img{
+
+img {
 	height: 120px;
 	margin: 7px;
 	box-shadow: 7px 7px 7px DimGray;

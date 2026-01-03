@@ -6,10 +6,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styl9.css">
 	<title>Poznaj Europę</title>
-</head> 
+</head>
 
 <body>
-
+	<?php
+	$conn = mysqli_connect(
+		"localhost",
+		"root",
+		"",
+		"podroze"
+	);
+	if (mysqli_connect_errno()) {
+		echo "faile conn" . mysqli_connect_error();
+		exit();
+	}
+	?>
 
 	<header>
 		<h1>BIURO PODRÓŻY</h1>
@@ -38,7 +49,18 @@
 			<h2>W tym roku jedziemy do...</h2>
 
 			<!-- script 1  -->
+
+			<?php
+			$sql = "SELECT `nazwaPliku`, `podpis` FROM `zdjecia` ORDER BY `zdjecia`.`podpis` ASC;";
+
+			$result = $conn->query($sql);
+			while ($row = $result->fetch_assoc()) {
+				echo '<img src="' . $row["nazwaPliku"] . '" alt="' . $row["podpis"] . '" title=" ' . $row["podpis"] . ' ">';
+			};
+			?>
+
 		</div>
+
 		<div id="right">
 			<h2>Kontakt</h2>
 			<a href="mailto:e-mail biuro@wycieczki.pl">napisz do nas</a>
@@ -61,8 +83,11 @@
 		<p>Stronę wykonał:1112223334455</p>
 	</footer>
 
+	<?php
+	$conn->close();
+	?>
 	<script>
-		setInterval(() => location.reload(), 300000);
+		setInterval(() => location.reload(), 2000);
 	</script>
 </body>
 
