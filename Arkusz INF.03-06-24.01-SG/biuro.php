@@ -56,14 +56,15 @@
 			$result = $conn->query($sql);
 			while ($row = $result->fetch_assoc()) {
 				echo '<img src="' . $row["nazwaPliku"] . '" alt="' . $row["podpis"] . '" title=" ' . $row["podpis"] . ' ">';
-			};
+			}
+			;
 			?>
 
 		</div>
 
 		<div id="right">
 			<h2>Kontakt</h2>
-			<a href="mailto:e-mail biuro@wycieczki.pl">napisz do nas</a>
+			<a href="mailto:biuro@wycieczki.pl">napisz do nas</a>
 			<p>telefon: 444555666</p>
 		</div>
 
@@ -71,12 +72,15 @@
 			<h3>W poprzednich latach byliśmy...</h3>
 			<ol>
 				<!-- script 2  -->
-				<li></li>
-				<li></li>
-				<li></li>
+				<?php
+				$sql1 = "SELECT `cel`, `dataWyjazdu` FROM wycieczki WHERE dostepna = '0';";
+				$result1 = $conn->query($sql1);
+				while ($row = $result1->fetch_assoc()) {
+					echo '<li>Dnia ' . $row['dataWyjazdu'] . ' pojechaliśmy do ' . $row['cel'] . '</li>';
+				}
+				?>
 			</ol>
 		</div>
-
 	</main>
 
 	<footer>
@@ -86,9 +90,6 @@
 	<?php
 	$conn->close();
 	?>
-	<script>
-		setInterval(() => location.reload(), 2000);
-	</script>
 </body>
 
 </html>
