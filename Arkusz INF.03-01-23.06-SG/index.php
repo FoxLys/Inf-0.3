@@ -25,15 +25,25 @@
 		<section id="mid">
 			<h2>Sprawdź cenę</h2>
 			<form action="Post">
-				input:
+				<select name="range" id="range">
+					<option value="0">Gumka do mazania</option>
+					<option value="1">Cienkopis</option>
+					<option value="2">Pisaki 60 szt.</option>
+					<option value="3">Markery 4 szt.</option>
+				</select>
+				<!-- script 2 -->
+				<input type="submit" value="SPRAWDŹ">
 			</form>
+			<p id="sctypt2"></p>
 		</section id="right">
-		<section>
-
-		</section>
+		<aside>
+			<h2>Kontakt</h2>
+			<p>e-mail:<a href="mailto:bok@sklep.pl">bok@sklep.pl</a></p>
+			<img src="promocja.png" alt="promocja">
+		</aside>
 	</main>
 	<footer>
-
+		<h4>Autor strony: 132151516516</h4>
 	</footer>
 </body>
 
