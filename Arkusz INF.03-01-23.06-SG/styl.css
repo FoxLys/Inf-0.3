@@ -30,6 +30,7 @@ main {
 
 ul li {
 	list-style-type: lower-latin;
+	text-align: left;
 }
 
 select {
@@ -45,7 +46,8 @@ img {
 footer {
 	display: grid;
 }
-#sctypt2{
+
+#sctypt2 {
 	margin-top: 100px;
 	border: 1px solid #8C7B75;
 }
